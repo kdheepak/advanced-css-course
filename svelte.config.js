@@ -1,6 +1,16 @@
 import adapter from "@sveltejs/adapter-static";
 import preprocess from "svelte-preprocess";
 
+const isProduction = process.env.NODE_ENV == "production";
+const productionBaseDirectory = "advanced-css-course";
+
+const paths = isProduction
+  ? {
+    base: "/${productionBaseDirectory}",
+    assets: `https://kdheepak.com/${productionBaseDirectory}`,
+  }
+  : {};
+
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
   // Consult https://github.com/sveltejs/svelte-preprocess
@@ -16,8 +26,12 @@ const config = {
   ],
 
   kit: {
+    paths,
     adapter: adapter(),
-
+    prerender: {
+      crawl: true,
+      enabled: true,
+    },
     vite: {
       css: {
         preprocessorOptions: {
