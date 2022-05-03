@@ -1,5 +1,6 @@
 import adapter from "@sveltejs/adapter-static";
 import preprocess from "svelte-preprocess";
+import { searchForWorkspaceRoot } from "vite";
 
 const isProduction = process.env.NODE_ENV == "production";
 const productionBaseDirectory = "advanced-css-course";
@@ -33,6 +34,12 @@ const config = {
       enabled: true,
     },
     vite: {
+      server: {
+        fs: {
+          allow: [searchForWorkspaceRoot(process.cwd()), "."],
+        },
+      },
+
       css: {
         preprocessorOptions: {
           scss: {

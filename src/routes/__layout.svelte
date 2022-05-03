@@ -3,4 +3,6 @@
   import "../app.scss";
 </script>
 
-<slot />
+<div class="main">
+  <slot />
+</div>

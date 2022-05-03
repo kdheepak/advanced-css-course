@@ -1,0 +1,29 @@
+<script>
+</script>
+
+<main class="main">
+  <header />
+</main>
+
+<style>
+  header {
+    height: 95vh;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(126, 213, 111, 0.8),
+        rgba(40, 180, 131, 0.8)
+      ),
+      url("../../static/images/hero.jpg");
+    background-size: cover;
+    background-position: top;
+    clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+  }
+  main {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #777;
+    padding: 30px;
+  }
+</style>
