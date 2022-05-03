@@ -7,7 +7,7 @@ const productionBaseDirectory = "portfolio";
 
 const paths = isProduction
   ? {
-    base: "/${productionBaseDirectory}",
+    base: `/${productionBaseDirectory}`,
     assets: `https://kdheepak.com/${productionBaseDirectory}`,
   }
   : {};
@@ -40,7 +40,6 @@ const config = {
           allow: [searchForWorkspaceRoot(process.cwd()), "."],
         },
       },
-
       css: {
         preprocessorOptions: {
           scss: {

@@ -11,7 +11,7 @@
             ><img
               alt="natours"
               class="block object-cover object-center w-full h-full rounded-lg"
-              src="../../static/images/hero.jpg"
+              src="{base}/images/hero.jpg"
             /></a
           >
         </div>

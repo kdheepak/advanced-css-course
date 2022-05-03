@@ -1,11 +1,12 @@
-<script>
+<script lang="ts">
+  import { base } from "$app/paths";
 </script>
 
 <main class="main">
   <header class="relative h-[95vh]">
     <img
       class="absolute top-[40px] left-[40px] h-[35px]"
-      src="../../static/images/logo-white.png"
+      src="{base}/images/logo-white.png"
       alt="Logo"
     />
     <h1
@@ -24,7 +25,7 @@
         rgba(126, 213, 111, 0.8),
         rgba(40, 180, 131, 0.8)
       ),
-      url("../../static/images/hero.jpg");
+      url("{base}/images/hero.jpg");
     background-size: cover;
     background-position: top;
     clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
