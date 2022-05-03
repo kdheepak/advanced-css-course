@@ -25,7 +25,7 @@
         rgba(126, 213, 111, 0.8),
         rgba(40, 180, 131, 0.8)
       ),
-      url("{base}/images/hero.jpg");
+      url("../../static/images/hero.jpg");
     background-size: cover;
     background-position: top;
     clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
