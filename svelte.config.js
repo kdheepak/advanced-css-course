@@ -30,6 +30,7 @@ const config = {
     paths,
     adapter: adapter(),
     prerender: {
+      default: true,
       crawl: true,
       enabled: true,
     },
