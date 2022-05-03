@@ -2,12 +2,23 @@
 </script>
 
 <main class="main">
-  <header />
+  <header class="relative h-[95vh]">
+    <img
+      class="absolute top-[40px] left-[40px] h-[35px]"
+      src="../../static/images/logo-white.png"
+      alt="Logo"
+    />
+    <h1
+      class="absolute text-[#ffffff] uppercase top-[40%] left-1/2 translate-x-[-50%] translate-y-[-50%]"
+    >
+      <span class="block font-bold text-[60px] tracking-[35px]">Outdoors</span>
+      <span class="block font-normal text-[20px] tracking-[17.4px]">is where life happens</span>
+    </h1>
+  </header>
 </main>
 
 <style>
   header {
-    height: 95vh;
     background-image: linear-gradient(
         to right bottom,
         rgba(126, 213, 111, 0.8),
