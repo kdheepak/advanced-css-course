@@ -18,7 +18,7 @@
       >
       <a
         href="#"
-        class="inline-block bg-white text-[#070707] px-[40px] py-[15px] hover:-translate-y-[3px] active:-translate-y-[1px] rounded-full transition-all hover:shadow-[0_10px_20px_rgba(0,0,0,.2)] active:shadow-[0_5px_10px_rgba(0,0,0,.2)]"
+        class="relative inline-block bg-white text-[#070707] px-[40px] py-[15px] hover:-translate-y-[3px] active:-translate-y-[1px] rounded-full transition-all hover:shadow-[0_10px_20px_rgba(0,0,0,.2)] active:shadow-[0_5px_10px_rgba(0,0,0,.2)] after:absolute after:top-0 after:left-0 after:inline-block after:h-full after:w-full after:rounded-full after:bg-white after:-z-[1] after:hover:scale-x-[1.4] after:hover:scale-y-[1.6] after:transition-all after:duration-[.4s] hover:after:opacity-0 move-in-bottom"
         >Discover our tours</a
       >
     </h1>
@@ -53,6 +53,15 @@
       animation-timing-function: ease-out;
       backface-visibility: hidden;
     }
+
+    .move-in-bottom {
+      animation-name: moveInBottom;
+      animation-duration: 1s;
+      animation-delay: 0.75s;
+      animation-timing-function: ease-out;
+      animation-fill-mode: backwards;
+      backface-visibility: hidden;
+    }
   }
 
   @keyframes moveInLeft {
@@ -76,6 +85,17 @@
     }
     80% {
       transform: translateX(-10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes moveInBottom {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
     }
     100% {
       opacity: 1;
