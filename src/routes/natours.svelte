@@ -10,11 +10,16 @@
       alt="Logo"
     />
     <h1
-      class="absolute text-[#ffffff] uppercase top-[40%] left-1/2 translate-x-[-50%] translate-y-[-50%]"
+      class="absolute text-[#ffffff] uppercase top-[40%] left-1/2 translate-x-[-50%] translate-y-[-50%] text-center"
     >
       <span class="move-in-left block font-bold text-[60px] tracking-[35px]">Outdoors</span>
-      <span class="move-in-right block font-normal text-[20px] tracking-[17.4px]"
+      <span class="move-in-right block font-normal text-[20px] tracking-[17.4px] mb-[60px]"
         >is where life happens</span
+      >
+      <a
+        href="#"
+        class="inline-block bg-white text-[#070707] px-[40px] py-[15px] hover:-translate-y-[3px] active:-translate-y-[1px] rounded-full transition-all hover:shadow-[0_10px_20px_rgba(0,0,0,.2)] active:shadow-[0_5px_10px_rgba(0,0,0,.2)]"
+        >Discover our tours</a
       >
     </h1>
   </header>
